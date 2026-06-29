@@ -1,0 +1,666 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.3 effective-5.10 (swiftlang-6.3.0.123.5 clang-2100.0.123.102)
+// swift-module-flags: -target arm64-apple-ios16.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name VaultSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3
+import Combine
+import DeveloperToolsSupport
+import Foundation
+import PassKit
+import Swift
+import SwiftUI
+import UIKit
+import VGSShowSDK
+@_exported import VaultSDK
+import WatchConnectivity
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public struct AuthRepository : Swift.Sendable {
+  public enum Config {
+    case `default`
+    public static func == (a: VaultSDK.AuthRepository.Config, b: VaultSDK.AuthRepository.Config) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+@objc public class VaultCardDisplayEntity : ObjectiveC.NSObject {
+  @objc public init(cardImage: UIKit.UIImage? = nil, cardImageURL: Foundation.URL? = nil, accentColor: UIKit.UIColor, cardForegroundTextColor: UIKit.UIColor)
+  @objc deinit
+}
+public struct VaultTransactionsResponse {
+  public let transactions: [VaultSDK.VaultTransaction]
+  public let pageSize: Swift.Int
+  public let totalItems: Swift.Int
+}
+public struct VaultTransaction {
+  public let transactionId: Swift.String?
+  public let accountId: Swift.String?
+  public let amount: VaultSDK.VaultCurrency
+  public let date: Foundation.Date
+  public let feeAmount: VaultSDK.VaultCurrency
+  public let logicalTransactionId: Swift.String?
+  public let reference: Swift.String
+  public let runningBalanceAmount: VaultSDK.VaultCurrency
+  public let type: Swift.String?
+  public let typeDescription: Swift.String?
+}
+public struct VaultCurrency {
+  public let amount: Swift.Double?
+  public let currencyCode: Swift.String?
+}
+public struct VaultTransactionsRequest {
+  public let cardId: Swift.Int
+  public let offset: Swift.Int
+  public let limit: Swift.Int
+  public init(cardId: Swift.Int, offset: Swift.Int = 0, limit: Swift.Int = 30)
+}
+@_hasMissingDesignatedInitializers @objc public class VaultAccountStatusModel : ObjectiveC.NSObject {
+  final public let balance: VaultSDK.VaultCurrency
+  @objc final public let status: VaultSDK.VaultAccountState
+  @objc final public let externalAccountId: Swift.String
+  @objc final public let cardNumber: Swift.String
+  @objc final public let plasticExpirationDate: Swift.String
+  @objc final public let isPlasticEnabled: Swift.Bool
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class VaultAccountTokensModel : ObjectiveC.NSObject {
+  @objc final public let panUniqueReference: Swift.String
+  @objc final public let wallet: Swift.String
+  @objc final public let status: VaultSDK.TokenStatus
+  @objc deinit
+}
+@objc public enum TokenStatus : Swift.Int {
+  case active
+  case unmapped
+  case suspended
+  case unknown
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum VaultDeactivationReasonCode : Swift.Int {
+  case inactive
+  case closedCancelled
+  case lostStolen
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public class VaultAccountDetails : ObjectiveC.NSObject {
+  @objc final public let account: VaultSDK.VaultAccount
+  @objc final public let client: VaultSDK.VaultClient?
+  public init(account: VaultSDK.VaultAccount, client: VaultSDK.VaultClient?)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class VaultClient : ObjectiveC.NSObject {
+  @objc final public let dateOfBirth: Swift.String?
+  @objc final public let emailAddress: Swift.String?
+  @objc final public let firstName: Swift.String?
+  @objc final public let lastName: Swift.String?
+  @objc final public let mobileNumber: Swift.String?
+  @objc final public let phoneNumber: Swift.String?
+  @objc final public let title: Swift.String?
+  @objc final public let middleName: Swift.String?
+  @objc final public let sex: Swift.String?
+  @objc final public let driversLicenceNumber: Swift.String?
+  @objc final public let address: VaultSDK.VaultAddress?
+  @objc final public let alternateAddress: VaultSDK.VaultAddress?
+  @objc final public let passport: VaultSDK.VaultPassport?
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class VaultAddress : ObjectiveC.NSObject {
+  @objc final public let building: Swift.String?
+  @objc final public let line1: Swift.String?
+  @objc final public let line2: Swift.String?
+  @objc final public let suburb: Swift.String?
+  @objc final public let city: Swift.String?
+  @objc final public let postcode: Swift.String?
+  @objc final public let state: Swift.String?
+  @objc final public let country: Swift.String?
+  @objc deinit
+}
+@objc public class VaultPassport : ObjectiveC.NSObject {
+  @objc final public let number: Swift.String?
+  @objc final public let issuingCountry: Swift.String?
+  @objc final public let expiry: Swift.String?
+  @objc public init(number: Swift.String?, issuingCountry: Swift.String?, expiry: Swift.String?)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class VaultAccount : ObjectiveC.NSObject {
+  @objc final public let externalAccountId: Swift.String
+  @objc final public let status: VaultSDK.VaultAccountState
+  final public let balance: VaultSDK.VaultCurrency
+  @objc final public let cardNumber: Swift.String
+  @objc final public let compliant: Swift.Bool
+  @objc final public let nameOnCard: Swift.String?
+  @objc final public let accountExpirationDate: Swift.String
+  @objc final public let plasticExpirationDate: Swift.String
+  @objc final public let isPlasticEnabled: Swift.Bool
+  @objc deinit
+}
+@objc public enum VaultAccountState : Swift.Int {
+  case preActive = 1
+  case active = 2
+  case inactive = 3
+  case expired = 4
+  case closed = 5
+  case emlInactive = 11
+  case inactivePinTriesExceeded = 20
+  case lostStolen = 31
+  case suspectedFraud = 32
+  case deactivated = 41
+  case replaced = 42
+  case locked = 43
+  case unknown = 0
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class VaultAccountStatus : ObjectiveC.NSObject {
+  final public let balance: VaultSDK.VaultCurrency
+  @objc final public let status: VaultSDK.VaultAccountState
+  @objc final public let externalAccountId: Swift.String
+  @objc final public let cardNumber: Swift.String
+  @objc final public let plasticExpirationDate: Swift.String
+  @objc final public let isPlasticEnabled: Swift.Bool
+  @objc final public let mdesConfigId: Swift.String
+  @objc deinit
+}
+@objc public class VaultCardModel : ObjectiveC.NSObject, Swift.Codable, Foundation.NSCoding {
+  @objc public var externalAccountId: Swift.String
+  @objc public var companyId: Swift.String
+  @objc public var mdesConfigId: Swift.String?
+  @objc public var processor: VaultSDK.VaultProcessor
+  @objc public init(externalAccountId: Swift.String, companyId: Swift.String, mdesConfigId: Swift.String?, processor: VaultSDK.VaultProcessor = .au)
+  @objc public func encode(with coder: Foundation.NSCoder)
+  @objc required public init?(coder: Foundation.NSCoder)
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@objc public enum VaultProcessor : Swift.Int, Swift.Codable {
+  case au
+  case us
+  public var stringValue: Swift.String {
+    get
+  }
+  public init?(stringValue: Swift.String)
+  public init(from decoder: any Swift.Decoder) throws
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct PassKitRepository : Swift.Sendable {
+  public enum Config {
+    case `default`
+    public static func == (a: VaultSDK.PassKitRepository.Config, b: VaultSDK.PassKitRepository.Config) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+@objc public class CampaignBasicDetails : ObjectiveC.NSObject, Swift.Codable {
+  @objc final public let endDate: Swift.String
+  @objc final public let companyId: Swift.String
+  @objc final public let externalProgramId: Swift.String
+  @objc final public let id: Swift.Int
+  @objc final public let name: Swift.String
+  @objc final public let programId: Swift.Int
+  @objc final public let startDate: Swift.String
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+public struct VaultUserCardListResponse {
+  public let userId: Swift.String
+  public let cards: VaultSDK.VaultCardListResponse
+}
+public struct VaultCardListResponse {
+  public let data: [VaultSDK.VaultUserCard]
+  public let offset: Swift.Int
+  public let limit: Swift.Int
+  public let total: Swift.Int
+}
+public struct VaultUserCard {
+  public let activationCode: Swift.String
+  public let campaignBackgroundColour: Swift.String?
+  public let campaignInfoDescription: Swift.String?
+  public let campaignInfoTitle: Swift.String?
+  public let cardArtUrl: Swift.String?
+  public let cardArtId: Swift.Int?
+  public let cardBalance: Swift.Double?
+  public let cardExpiryDate: Foundation.Date?
+  public let cardStatus: VaultSDK.VaultCardStatus
+  public let cardType: VaultSDK.VaultCardType
+  public let closedDate: Foundation.Date?
+  public let eaid: Swift.String
+  public let companyId: Swift.String?
+  public let firstName: Swift.String
+  public let hasJitTransactions: Swift.Bool?
+  public let hideAddToWallet: Swift.Bool?
+  public let id: Swift.Int
+  public let kycStatus: VaultSDK.VaultKycStatus?
+  public let lastFour: Swift.String?
+  public let lastName: Swift.String?
+  public let panColour: Swift.String?
+  public let redeemedDate: Foundation.Date?
+  public let termsUrl: Swift.String?
+  public var emlCardModel: VaultSDK.VaultCardModel {
+    get
+  }
+}
+public enum VaultCardStatus : Swift.String, Swift.Decodable {
+  case active
+  case cancelled
+  case redeemed
+  case closed
+  case inactive
+  case lostOrStolen
+  case delivered
+  case expired
+  case preactive
+  case suspectedFraud
+  case kycLocked
+  case tooManyPinAttempts
+  case emlInactive
+  case locked
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum VaultKycStatus : Swift.String, Swift.Decodable {
+  case notRequired
+  case requested
+  case pending
+  case failed
+  case blocked
+  case compliant
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum VaultCardType : Swift.String, Swift.Decodable {
+  case eml
+  case cmp
+  case wex
+  case thredd
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct PinDomain : Swift.Sendable {
+}
+@objc public enum VaultSDKEnvironment : Swift.Int {
+  case dev
+  case beta
+  case preProd
+  case prod
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct VaultApiException : Swift.Error {
+  public let statusCode: Swift.Int
+  public let errorCode: Swift.String?
+  public let message: Swift.String
+  public let errors: [VaultSDK.VaultErrorDetail]?
+}
+public struct VaultErrorDetail {
+  public let message: Swift.String
+}
+extension VaultSDK.VaultApiException : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+@objc public class VaultDeactivateCardRequest : ObjectiveC.NSObject {
+  @objc public var reasonCode: VaultSDK.VaultDeactivationReasonCode
+  @objc public var card: VaultSDK.VaultCardModel
+  @objc public init(card: VaultSDK.VaultCardModel, reasonCode: VaultSDK.VaultDeactivationReasonCode)
+  @objc deinit
+}
+@objc public class VaultManagePinDisplayRequest : ObjectiveC.NSObject {
+  @objc public init(card: VaultSDK.VaultCardModel, displayOptions: VaultSDK.VaultCardDisplayEntity)
+  @objc deinit
+}
+@objc public class VaultShowCardNotPresentDetailsRequest : ObjectiveC.NSObject {
+  @objc final public let card: VaultSDK.VaultCardModel
+  @objc final public let displayOptions: VaultSDK.VaultCardDisplayEntity
+  @objc public init(card: VaultSDK.VaultCardModel, displayOptions: VaultSDK.VaultCardDisplayEntity)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class VPSVaultSDK : ObjectiveC.NSObject {
+  @objc public static let shared: VaultSDK.VPSVaultSDK
+  @objc public var environment: VaultSDK.VaultSDKEnvironment
+  @objc public func configure(subscriptionKey: Swift.String, environment: VaultSDK.VaultSDKEnvironment = .prod, debug: Swift.Bool = false, applicationKeyId: Swift.String? = nil, applicationKeySecret: Swift.String? = nil)
+  @objc public func setAuthenticationToken(_ token: Swift.String)
+  @objc public func logout()
+  @objc public func isLoggedIn() -> Swift.Bool
+  public func redeemGiftCard(phone: Swift.String, activationCode: Swift.String, onComplete: @escaping (VaultSDK.VaultUserCard) -> Swift.Void, onError: @escaping (any Swift.Error) -> Swift.Void)
+  public func getCardholderCards(onComplete: @escaping (_ status: VaultSDK.VaultUserCardListResponse) -> Swift.Void, onError: @escaping (_ status: any Swift.Error) -> Swift.Void)
+  public func getCardholderClosedCards(onComplete: @escaping (_ status: VaultSDK.VaultUserCardListResponse) -> Swift.Void, onError: @escaping (_ status: any Swift.Error) -> Swift.Void)
+  public func getCardDetails(cardId: Swift.Int, onComplete: @escaping (VaultSDK.VaultUserCard) -> Swift.Void, onError: @escaping (any Swift.Error) -> Swift.Void)
+  public func getTransactionHistory(request: VaultSDK.VaultTransactionsRequest, onComplete: @escaping (_ response: VaultSDK.VaultTransactionsResponse) -> Swift.Void, onError: @escaping (_ status: any Swift.Error) -> Swift.Void)
+  @objc public func showCardNotPresentDetails(cardId: Swift.Int, displayOptions: VaultSDK.VaultCardDisplayEntity, presentingViewController: UIKit.UIViewController)
+  @objc public func getCampaignDetails(card: VaultSDK.VaultCardModel, onComplete: @escaping (VaultSDK.CampaignBasicDetails) -> Swift.Void, onError: @escaping (any Swift.Error) -> Swift.Void)
+  @objc public func showUpdatePin(cardId: Swift.Int, displayOptions: VaultSDK.VaultCardDisplayEntity, presentingViewController: UIKit.UIViewController, onComplete: @escaping () -> Swift.Void, onError: @escaping (any Swift.Error) -> Swift.Void)
+  @objc public func getWalletStatus(cardId: Swift.Int, forDevice device: VaultSDK.VaultWalletDestination, onComplete: @escaping (VaultSDK.VaultWalletStatus) -> Swift.Void, onError: @escaping (any Swift.Error) -> Swift.Void)
+  @objc public func addCardToWallet(cardId: Swift.Int, cardName: Swift.String, presentingViewController: UIKit.UIViewController, onComplete: @escaping () -> Swift.Void, onError: @escaping (any Swift.Error) -> Swift.Void)
+  public func getTokenisableCards(destination: VaultSDK.VaultWalletDestination, onComplete: @escaping ([VaultSDK.VaultUserCard]) -> Swift.Void, onError: @escaping (any Swift.Error) -> Swift.Void)
+  @available(iOSApplicationExtension 14.0, *)
+  public func getWalletExtensionTokenisationData(card: VaultSDK.VaultUserCard, certificateChain certificates: [Foundation.Data], nonce: Foundation.Data, nonceSignature: Foundation.Data, onComplete: @escaping (VaultSDK.VaultTokenisationData) -> Swift.Void, onError: @escaping (any Swift.Error) -> Swift.Void)
+  @objc public func updateMessagingToken(_ token: Swift.String, card: VaultSDK.VaultCardModel, onComplete: @escaping () -> Swift.Void, onError: @escaping (any Swift.Error) -> Swift.Void)
+  @objc public func presentCardForPayment(cardId: Swift.Int, onComplete: @escaping () -> Swift.Void, onError: @escaping (any Swift.Error) -> Swift.Void)
+  @objc public func resumeAddToWallet(cardId: Swift.Int, presentingViewController: UIKit.UIViewController, onComplete: @escaping () -> Swift.Void, onError: @escaping (any Swift.Error) -> Swift.Void)
+  public func enableCard(cardId: Swift.Int, onComplete: @escaping () -> Swift.Void, onError: @escaping (any Swift.Error) -> Swift.Void)
+  public func disableCard(cardId: Swift.Int, onComplete: @escaping () -> Swift.Void, onError: @escaping (any Swift.Error) -> Swift.Void)
+  public func cancelCard(cardId: Swift.Int, onComplete: @escaping () -> Swift.Void, onError: @escaping (any Swift.Error) -> Swift.Void)
+  @objc deinit
+}
+public struct CardholderRepository : Swift.Sendable {
+}
+@objc public class VaultAccountDetailsRequest : ObjectiveC.NSObject {
+  @objc final public let withClient: Swift.Bool
+  @objc final public let withFreeText: Swift.Bool
+  @objc final public let card: VaultSDK.VaultCardModel
+  @objc public init(card: VaultSDK.VaultCardModel, withClient: Swift.Bool = true, withFreeText: Swift.Bool = true)
+  @objc deinit
+}
+public struct WalletRepository : Swift.Sendable {
+  public enum Config {
+    case vaultApi
+    case emlSdk
+    public static func == (a: VaultSDK.WalletRepository.Config, b: VaultSDK.WalletRepository.Config) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+@objc public class VaultCardActivationRequest : ObjectiveC.NSObject {
+  @objc final public let activationCode: Swift.String
+  @objc final public let card: VaultSDK.VaultCardModel
+  @objc public init(card: VaultSDK.VaultCardModel, activationCode: Swift.String)
+  @objc deinit
+}
+@objc public class VaultLoginRequest : ObjectiveC.NSObject, Swift.Encodable {
+  @objc public var username: Swift.String
+  @objc public var password: Swift.String
+  @objc public var keepLoggedIn: Swift.Bool
+  @objc public init(username: Swift.String, password: Swift.String, keepLoggedIn: Swift.Bool)
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct EmlRepository : Swift.Sendable {
+  public enum Config {
+    case `default`
+    public static func == (a: VaultSDK.EmlRepository.Config, b: VaultSDK.EmlRepository.Config) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public struct UnsupportedCardError : Foundation.LocalizedError {
+    public var errorDescription: Swift.String?
+    public var failureReason: Swift.String?
+    public var recoverySuggestion: Swift.String?
+  }
+}
+public struct RedemptionRepository : Swift.Sendable {
+  public enum Config {
+    case `default`
+    public static func == (a: VaultSDK.RedemptionRepository.Config, b: VaultSDK.RedemptionRepository.Config) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+@objc public class VaultLinkModel : ObjectiveC.NSObject {
+  @objc final public let label: Swift.String
+  @objc final public let destination: Swift.String
+  @objc final public let type: Swift.String
+  @objc public init(label: Swift.String, destination: Swift.String, type: Swift.String)
+  @objc deinit
+}
+@objc public class VaultPinException : ObjectiveC.NSObject {
+  @objc final public let cancelled: Swift.Bool
+  @objc final public let isUnauthorized: Swift.Bool
+  @objc final public let forceLogout: Swift.Bool
+  @objc public init(statusCode: Swift.Int, message: Swift.String, cancelled: Swift.Bool, unauthorized: Swift.Bool, forceLogout: Swift.Bool = false)
+  @objc deinit
+}
+public struct WalletDomain : Swift.Sendable {
+  public enum Config {
+    case `default`
+    public static func == (a: VaultSDK.WalletDomain.Config, b: VaultSDK.WalletDomain.Config) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+@objc public enum VaultWalletStatus : Swift.Int {
+  case unavailable
+  case available
+  case added
+  case requiresVerification
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum VaultWalletDestination : Swift.Int {
+  case either
+  case watch
+  case phone
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct VaultWalletRepository : Swift.Sendable {
+  public enum Config {
+    case `default`
+    public static func == (a: VaultSDK.VaultWalletRepository.Config, b: VaultSDK.VaultWalletRepository.Config) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+@objc public class VaultPasswordResetResponse : ObjectiveC.NSObject, Swift.Decodable {
+  @objc public var codeRequired: Swift.Bool
+  @objc public var passwordRequired: Swift.Bool
+  @objc public var cards: [VaultSDK.VaultCardModel]?
+  @objc public init(codeRequired: Swift.Bool, passwordRequired: Swift.Bool, cards: [VaultSDK.VaultCardModel]?)
+  required public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
+}
+public struct VgsApiRepository : Swift.Sendable {
+  public enum Config {
+    case `default`
+    public static func == (a: VaultSDK.VgsApiRepository.Config, b: VaultSDK.VgsApiRepository.Config) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+@objc public class VaultTextModel : ObjectiveC.NSObject {
+  @objc final public let title: Swift.String
+  @objc final public let desc: Swift.String
+  @objc public init(title: Swift.String, desc: Swift.String)
+  @objc deinit
+}
+@objc public class VaultRedeemGiftCardResponse : ObjectiveC.NSObject, Swift.Decodable {
+  @objc final public let passwordRequired: Swift.Bool
+  @objc final public let accessToken: Swift.String?
+  @objc final public let cards: [VaultSDK.VaultCardModel]?
+  @objc final public let current: VaultSDK.VaultCardModel?
+  @objc public init(passwordRequired: Swift.Bool, accessToken: Swift.String? = nil, cards: [VaultSDK.VaultCardModel]? = nil, current: VaultSDK.VaultCardModel? = nil)
+  @objc deinit
+  required public init(from decoder: any Swift.Decoder) throws
+}
+public struct TransactionsRepository : Swift.Sendable {
+  public enum Config {
+    case `default`
+    public static func == (a: VaultSDK.TransactionsRepository.Config, b: VaultSDK.TransactionsRepository.Config) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public struct WatchRepository : Swift.Sendable {
+  public enum Config {
+    case `default`
+    public static func == (a: VaultSDK.WatchRepository.Config, b: VaultSDK.WatchRepository.Config) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+@objc public class VaultRedeemGiftCardRequest : ObjectiveC.NSObject, Swift.Encodable {
+  @objc final public let phoneNumber: Swift.String
+  @objc final public let activationCode: Swift.String
+  @objc final public let password: Swift.String?
+  @objc public init(phoneNumber: Swift.String, activationCode: Swift.String, password: Swift.String? = nil)
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct VaultTokenisationData {
+  public let activationData: Foundation.Data
+  public let encryptedPassData: Foundation.Data
+  public let ephemeralPublicKey: Foundation.Data
+}
+@_hasMissingDesignatedInitializers @objc public class VaultConfigEntity : ObjectiveC.NSObject {
+  @objc final public let minApiVersion: Swift.Int
+  @objc final public let termsVersion: Swift.Int
+  @objc final public let terms: [VaultSDK.VaultTextModel]
+  @objc final public let faqs: [VaultSDK.VaultTextModel]
+  @objc final public let supportLinks: [VaultSDK.VaultLinkModel]
+  @objc final public let supportTitle: Swift.String?
+  @objc final public let playStoreUrl: Swift.String?
+  @objc final public let appStoreUrl: Swift.String?
+  @objc final public let hideManagePin: Swift.Bool
+  @objc final public let isGiftCard: Swift.Bool
+  @objc final public let cardArtBaseUrl: Swift.String?
+  @objc deinit
+}
+@objc public class VaultLoginResponse : ObjectiveC.NSObject {
+  @objc public var cards: [VaultSDK.VaultCardModel]
+  @objc public var errorMessage: Swift.String?
+  @objc public init(cards: [VaultSDK.VaultCardModel], errorMessage: Swift.String?)
+  @objc deinit
+}
+@objc public class VaultPlasticActivationRequest : ObjectiveC.NSObject {
+  @objc public var activationCode: Swift.String
+  @objc public var card: VaultSDK.VaultCardModel
+  @objc public init(activationCode: Swift.String, card: VaultSDK.VaultCardModel)
+  @objc deinit
+}
+@objc public class VaultPasswordResetRequest : ObjectiveC.NSObject, Swift.Encodable {
+  @objc final public let phoneNumber: Swift.String
+  @objc final public let verificationCode: Swift.String?
+  @objc final public let password: Swift.String?
+  @objc public init(phoneNumber: Swift.String, verificationCode: Swift.String? = nil, password: Swift.String? = nil)
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct CardNotPresentDomain : Swift.Sendable {
+  public enum Config {
+    case `default`
+    public static func == (a: VaultSDK.CardNotPresentDomain.Config, b: VaultSDK.CardNotPresentDomain.Config) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public struct CardsRepository : Swift.Sendable {
+  public enum Config {
+    case `default`
+    public static func == (a: VaultSDK.CardsRepository.Config, b: VaultSDK.CardsRepository.Config) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+extension VaultSDK.AuthRepository.Config : Swift.Equatable {}
+extension VaultSDK.AuthRepository.Config : Swift.Hashable {}
+extension VaultSDK.TokenStatus : Swift.Equatable {}
+extension VaultSDK.TokenStatus : Swift.Hashable {}
+extension VaultSDK.TokenStatus : Swift.RawRepresentable {}
+extension VaultSDK.VaultDeactivationReasonCode : Swift.Equatable {}
+extension VaultSDK.VaultDeactivationReasonCode : Swift.Hashable {}
+extension VaultSDK.VaultDeactivationReasonCode : Swift.RawRepresentable {}
+extension VaultSDK.VaultAccountState : Swift.Equatable {}
+extension VaultSDK.VaultAccountState : Swift.Hashable {}
+extension VaultSDK.VaultAccountState : Swift.RawRepresentable {}
+extension VaultSDK.VaultProcessor : Swift.Equatable {}
+extension VaultSDK.VaultProcessor : Swift.Hashable {}
+extension VaultSDK.VaultProcessor : Swift.RawRepresentable {}
+extension VaultSDK.WatchRepository.Config : Swift.Equatable {}
+extension VaultSDK.WatchRepository.Config : Swift.Hashable {}
+extension VaultSDK.PassKitRepository.Config : Swift.Equatable {}
+extension VaultSDK.PassKitRepository.Config : Swift.Hashable {}
+extension VaultSDK.CardsRepository.Config : Swift.Equatable {}
+extension VaultSDK.CardsRepository.Config : Swift.Hashable {}
+extension VaultSDK.VaultCardStatus : Swift.Equatable {}
+extension VaultSDK.VaultCardStatus : Swift.Hashable {}
+extension VaultSDK.VaultCardStatus : Swift.RawRepresentable {}
+extension VaultSDK.VaultKycStatus : Swift.Equatable {}
+extension VaultSDK.VaultKycStatus : Swift.Hashable {}
+extension VaultSDK.VaultKycStatus : Swift.RawRepresentable {}
+extension VaultSDK.VaultCardType : Swift.Equatable {}
+extension VaultSDK.VaultCardType : Swift.Hashable {}
+extension VaultSDK.VaultCardType : Swift.RawRepresentable {}
+extension VaultSDK.RedemptionRepository.Config : Swift.Equatable {}
+extension VaultSDK.RedemptionRepository.Config : Swift.Hashable {}
+extension VaultSDK.VaultSDKEnvironment : Swift.Equatable {}
+extension VaultSDK.VaultSDKEnvironment : Swift.Hashable {}
+extension VaultSDK.VaultSDKEnvironment : Swift.RawRepresentable {}
+extension VaultSDK.WalletRepository.Config : Swift.Equatable {}
+extension VaultSDK.WalletRepository.Config : Swift.Hashable {}
+extension VaultSDK.TransactionsRepository.Config : Swift.Equatable {}
+extension VaultSDK.TransactionsRepository.Config : Swift.Hashable {}
+extension VaultSDK.EmlRepository.Config : Swift.Equatable {}
+extension VaultSDK.EmlRepository.Config : Swift.Hashable {}
+extension VaultSDK.WalletDomain.Config : Swift.Equatable {}
+extension VaultSDK.WalletDomain.Config : Swift.Hashable {}
+extension VaultSDK.VaultWalletStatus : Swift.Equatable {}
+extension VaultSDK.VaultWalletStatus : Swift.Hashable {}
+extension VaultSDK.VaultWalletStatus : Swift.RawRepresentable {}
+extension VaultSDK.VaultWalletDestination : Swift.Equatable {}
+extension VaultSDK.VaultWalletDestination : Swift.Hashable {}
+extension VaultSDK.VaultWalletDestination : Swift.RawRepresentable {}
+extension VaultSDK.VaultWalletRepository.Config : Swift.Equatable {}
+extension VaultSDK.VaultWalletRepository.Config : Swift.Hashable {}
+extension VaultSDK.VgsApiRepository.Config : Swift.Equatable {}
+extension VaultSDK.VgsApiRepository.Config : Swift.Hashable {}
+extension VaultSDK.CardNotPresentDomain.Config : Swift.Equatable {}
+extension VaultSDK.CardNotPresentDomain.Config : Swift.Hashable {}

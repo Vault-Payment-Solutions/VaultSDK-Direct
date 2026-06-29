@@ -1,0 +1,10 @@
+framework module VaultSDK {
+  umbrella header "VaultSDK.h"
+  export *
+
+  module * { export * }
+}
+
+module VaultSDK.Swift {
+  header "VaultSDK-Swift.h"
+}

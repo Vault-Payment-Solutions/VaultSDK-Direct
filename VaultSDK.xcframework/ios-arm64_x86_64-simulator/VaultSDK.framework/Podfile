@@ -1,0 +1,63 @@
+source 'https://github.com/emlsdk/repo'
+source 'https://cdn.cocoapods.org/'
+
+platform :ios, '16.0'
+
+use_modular_headers!
+
+workspace 'VaultSDK'
+
+project 'VaultSDK'
+project 'vaultsdk-sample/VaultSDKSample'
+
+def eml_pods
+  pod 'EMLSDK', '~> 3.8.2'
+end
+
+def shared_pods
+  pod 'VGSShowSDK', '1.1.4'
+end
+
+
+target 'VaultSDKSample' do
+  project 'vaultsdk-sample/VaultSDKSample'
+
+  pod 'FirebaseAuth'
+  shared_pods
+  eml_pods
+end
+
+target 'VaultSDK' do
+  project 'VaultSDK'
+  shared_pods
+end
+
+target 'VaultSDKEML' do
+  project 'VaultSDK'
+  shared_pods
+  eml_pods
+end
+
+
+target 'VaultSDKTests' do
+  project 'VaultSDK'
+  shared_pods
+end
+
+post_install do |installer|
+
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+        config.build_settings.delete 'IPHONEOS_DEPLOYMENT_TARGET'
+    end
+  end
+
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      xcconfig_path = config.base_configuration_reference.real_path
+      xcconfig = File.read(xcconfig_path)
+      xcconfig_mod = xcconfig.gsub(/DT_TOOLCHAIN_DIR/, "TOOLCHAIN_DIR")
+      File.open(xcconfig_path, "w") { |file| file << xcconfig_mod }
+    end
+  end
+end
