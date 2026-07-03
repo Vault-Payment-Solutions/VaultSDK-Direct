@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.3 effective-5.10 (swiftlang-6.3.0.123.5 clang-2100.0.123.102)
-// swift-module-flags: -target arm64-apple-ios16.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name VaultSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
+// swift-module-flags: -target arm64-apple-ios16.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name VaultSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
 import Combine
 import DeveloperToolsSupport
 import Foundation
@@ -26,7 +26,9 @@ public struct AuthRepository : Swift.Sendable {
   }
 }
 @objc public class VaultCardDisplayEntity : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(cardImage: UIKit.UIImage? = nil, cardImageURL: Foundation.URL? = nil, accentColor: UIKit.UIColor, cardForegroundTextColor: UIKit.UIColor)
+  #endif
   @objc deinit
 }
 public struct VaultTransactionsResponse {
@@ -76,7 +78,9 @@ public struct VaultTransactionsRequest {
   case unmapped
   case suspended
   case unknown
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -86,7 +90,9 @@ public struct VaultTransactionsRequest {
   case inactive
   case closedCancelled
   case lostStolen
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -95,7 +101,9 @@ public struct VaultTransactionsRequest {
 @objc public class VaultAccountDetails : ObjectiveC.NSObject {
   @objc final public let account: VaultSDK.VaultAccount
   @objc final public let client: VaultSDK.VaultClient?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(account: VaultSDK.VaultAccount, client: VaultSDK.VaultClient?)
+  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class VaultClient : ObjectiveC.NSObject {
@@ -129,7 +137,9 @@ public struct VaultTransactionsRequest {
   @objc final public let number: Swift.String?
   @objc final public let issuingCountry: Swift.String?
   @objc final public let expiry: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(number: Swift.String?, issuingCountry: Swift.String?, expiry: Swift.String?)
+  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class VaultAccount : ObjectiveC.NSObject {
@@ -158,7 +168,9 @@ public struct VaultTransactionsRequest {
   case replaced = 42
   case locked = 43
   case unknown = 0
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -179,9 +191,13 @@ public struct VaultTransactionsRequest {
   @objc public var companyId: Swift.String
   @objc public var mdesConfigId: Swift.String?
   @objc public var processor: VaultSDK.VaultProcessor
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(externalAccountId: Swift.String, companyId: Swift.String, mdesConfigId: Swift.String?, processor: VaultSDK.VaultProcessor = .au)
+  #endif
   @objc public func encode(with coder: Foundation.NSCoder)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc required public init?(coder: Foundation.NSCoder)
+  #endif
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
@@ -192,9 +208,13 @@ public struct VaultTransactionsRequest {
   public var stringValue: Swift.String {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(stringValue: Swift.String)
+  #endif
   public init(from decoder: any Swift.Decoder) throws
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -275,7 +295,9 @@ public enum VaultCardStatus : Swift.String, Swift.Decodable {
   case tooManyPinAttempts
   case emlInactive
   case locked
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -288,7 +310,9 @@ public enum VaultKycStatus : Swift.String, Swift.Decodable {
   case failed
   case blocked
   case compliant
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -299,7 +323,9 @@ public enum VaultCardType : Swift.String, Swift.Decodable {
   case cmp
   case wex
   case thredd
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -312,7 +338,9 @@ public struct PinDomain : Swift.Sendable {
   case beta
   case preProd
   case prod
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -328,9 +356,11 @@ public struct VaultErrorDetail {
   public let message: Swift.String
 }
 extension VaultSDK.VaultApiException : Foundation.LocalizedError {
+  #if compiler(>=5.3) && $NonescapableTypes
   public var errorDescription: Swift.String? {
     get
   }
+  #endif
 }
 @objc public class VaultDeactivateCardRequest : ObjectiveC.NSObject {
   @objc public var reasonCode: VaultSDK.VaultDeactivationReasonCode
@@ -351,7 +381,9 @@ extension VaultSDK.VaultApiException : Foundation.LocalizedError {
 @_hasMissingDesignatedInitializers @objc public class VPSVaultSDK : ObjectiveC.NSObject {
   @objc public static let shared: VaultSDK.VPSVaultSDK
   @objc public var environment: VaultSDK.VaultSDKEnvironment
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func configure(subscriptionKey: Swift.String, environment: VaultSDK.VaultSDKEnvironment = .prod, debug: Swift.Bool = false, applicationKeyId: Swift.String? = nil, applicationKeySecret: Swift.String? = nil)
+  #endif
   @objc public func setAuthenticationToken(_ token: Swift.String)
   @objc public func logout()
   @objc public func isLoggedIn() -> Swift.Bool
@@ -464,7 +496,9 @@ public struct WalletDomain : Swift.Sendable {
   case available
   case added
   case requiresVerification
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -474,7 +508,9 @@ public struct WalletDomain : Swift.Sendable {
   case either
   case watch
   case phone
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -494,7 +530,9 @@ public struct VaultWalletRepository : Swift.Sendable {
   @objc public var codeRequired: Swift.Bool
   @objc public var passwordRequired: Swift.Bool
   @objc public var cards: [VaultSDK.VaultCardModel]?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(codeRequired: Swift.Bool, passwordRequired: Swift.Bool, cards: [VaultSDK.VaultCardModel]?)
+  #endif
   required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
 }
@@ -519,7 +557,9 @@ public struct VgsApiRepository : Swift.Sendable {
   @objc final public let accessToken: Swift.String?
   @objc final public let cards: [VaultSDK.VaultCardModel]?
   @objc final public let current: VaultSDK.VaultCardModel?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(passwordRequired: Swift.Bool, accessToken: Swift.String? = nil, cards: [VaultSDK.VaultCardModel]? = nil, current: VaultSDK.VaultCardModel? = nil)
+  #endif
   @objc deinit
   required public init(from decoder: any Swift.Decoder) throws
 }
@@ -547,7 +587,9 @@ public struct WatchRepository : Swift.Sendable {
   @objc final public let phoneNumber: Swift.String
   @objc final public let activationCode: Swift.String
   @objc final public let password: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(phoneNumber: Swift.String, activationCode: Swift.String, password: Swift.String? = nil)
+  #endif
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
 }
@@ -573,7 +615,9 @@ public struct VaultTokenisationData {
 @objc public class VaultLoginResponse : ObjectiveC.NSObject {
   @objc public var cards: [VaultSDK.VaultCardModel]
   @objc public var errorMessage: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(cards: [VaultSDK.VaultCardModel], errorMessage: Swift.String?)
+  #endif
   @objc deinit
 }
 @objc public class VaultPlasticActivationRequest : ObjectiveC.NSObject {
@@ -586,7 +630,9 @@ public struct VaultTokenisationData {
   @objc final public let phoneNumber: Swift.String
   @objc final public let verificationCode: Swift.String?
   @objc final public let password: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(phoneNumber: Swift.String, verificationCode: Swift.String? = nil, password: Swift.String? = nil)
+  #endif
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
 }

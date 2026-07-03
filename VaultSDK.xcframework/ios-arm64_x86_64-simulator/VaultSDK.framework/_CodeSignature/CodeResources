@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		2MwErAEl6qa+5l1XDJyzgpPCtqI=
+		xr1XWavRzUdFMGJbN5nzgiPCiXE=
 		</data>
 		<key>Headers/VaultSDK-Swift.h</key>
 		<data>
-		4RpiN29KIOL/O9fs9fP3S86JMbY=
+		PVcXZY5oibiZuIyn+R9J8RPIuuo=
 		</data>
 		<key>Headers/VaultSDK.h</key>
 		<data>
@@ -18,51 +18,51 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		VxDAcBdJoLQt/8XXwSVAoEc8Pfo=
+		0UwrLZ80jLmxi52M97CYwW/cWDc=
 		</data>
 		<key>Modules/VaultSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		odWO1hKWpSEZDugr6jxVV5MX/N0=
+		NMae3K92Uy9QIabNouawfDsu1KI=
 		</data>
 		<key>Modules/VaultSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Qf24kSXww9XOPgT46Pi9Y8j821Q=
+		hd2xVeJtqW8RimUPtl8/DMQqDCw=
 		</data>
 		<key>Modules/VaultSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		eCVxW5oG+J1R5QBWWqOS5VlGMsY=
+		C0pD7koNwGBzLtlzFawTt/Xma4Y=
 		</data>
 		<key>Modules/VaultSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Qf24kSXww9XOPgT46Pi9Y8j821Q=
+		hd2xVeJtqW8RimUPtl8/DMQqDCw=
 		</data>
 		<key>Modules/VaultSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		hP/sW1fSHWKXKFYgl0frzP1j6ek=
+		3UrQDQpp1Jd1SoizN+lwxqW6dNw=
 		</data>
 		<key>Modules/VaultSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		odWO1hKWpSEZDugr6jxVV5MX/N0=
+		NMae3K92Uy9QIabNouawfDsu1KI=
 		</data>
 		<key>Modules/VaultSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		FKGQ4UlVMytT2b4NEDRk5z40O8M=
+		9tQyNN+4VXSoW5DTBn5/XrQnAZ0=
 		</data>
 		<key>Modules/VaultSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Mg3weJKLRWhwLwb5mj/leFz2Ty0=
+		Ym2onQmdhJqKNc7GnbnQpHdtzTM=
 		</data>
 		<key>Modules/VaultSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		FKGQ4UlVMytT2b4NEDRk5z40O8M=
+		9tQyNN+4VXSoW5DTBn5/XrQnAZ0=
 		</data>
 		<key>Modules/VaultSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		3AxHplq3PoAm9PTEiMVIS3qYAZg=
+		98T/gT3mDQavwVJAAEI62F4Fi+o=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		S/NLUKrbcQpTDH82wTzkRoFlzKg=
+		2Pbf1pilaC7Liz5j2R37qoKq/l4=
 		</data>
 		<key>Podfile</key>
 		<data>
@@ -83,14 +83,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sp2spf/54zNfyJAajW+iHBJ0gxilX/vGOzoSLKCQQ/Y=
+			Hh1+UdGjjRkd1Dfgv6Sc3Vifu0bIs9Pf3QqApFLA9D8=
 			</data>
 		</dict>
 		<key>Headers/VaultSDK-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+zTGzbI39IW4IW2u/EqRXCJkd4HCHbWeJuzDhoFEKP4=
+			+wZedGIj0j/E7gNRhQ2S0kP7MWKEKOZyLnGB0/w1o7w=
 			</data>
 		</dict>
 		<key>Headers/VaultSDK.h</key>
@@ -104,77 +104,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EDe74fdDtf9sD0IKYu057C20rwPBDZwgQDjk72FQKwc=
+			+7lYs+2jGVWMDwboRk5+2T3sL8LZOh7Cy3ulOfNNjws=
 			</data>
 		</dict>
 		<key>Modules/VaultSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			s6omJJAQqNObBKm0WWCXyqgF5dnsW67qgMrs62t6mko=
+			gyAT2dcfqM2TC6goq4YbrhiANbmBiiclUROIJTygmHo=
 			</data>
 		</dict>
 		<key>Modules/VaultSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yVFVKPiBeaPIfs2/NWIxEZfsLSDPPxH9noIr5tBtI10=
+			XbdQ2TGCni2GpxlyR1PTUF2vzWVIpaK4LTrPKIM1csA=
 			</data>
 		</dict>
 		<key>Modules/VaultSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			s6omJJAQqNObBKm0WWCXyqgF5dnsW67qgMrs62t6mko=
+			gyAT2dcfqM2TC6goq4YbrhiANbmBiiclUROIJTygmHo=
 			</data>
 		</dict>
 		<key>Modules/VaultSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HvHue9oGitrHSTnzvfWVwPweUTJhdlPruxNR6bYcLt8=
+			d8CIf5KHdqHhtvN/SPaKCr4eyG3vTe0gMqToa6reqgk=
 			</data>
 		</dict>
 		<key>Modules/VaultSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EDe74fdDtf9sD0IKYu057C20rwPBDZwgQDjk72FQKwc=
+			+7lYs+2jGVWMDwboRk5+2T3sL8LZOh7Cy3ulOfNNjws=
 			</data>
 		</dict>
 		<key>Modules/VaultSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			X05POj4iXffxmYZN0sqnrnN7BidxqGWhBJZFna2bPag=
+			uC1O9RubZh3YzeLelvxYis39iSl+M6fQrsszfY2BTXE=
 			</data>
 		</dict>
 		<key>Modules/VaultSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vCKhq2y5+8BSF7IuD6pADzjHmctSEpjW5AK/AhSz+Hg=
+			whe3a/qYNrBXr4g4SWifVw1rOeaMq15nDuVkvBKITZw=
 			</data>
 		</dict>
 		<key>Modules/VaultSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			X05POj4iXffxmYZN0sqnrnN7BidxqGWhBJZFna2bPag=
+			uC1O9RubZh3YzeLelvxYis39iSl+M6fQrsszfY2BTXE=
 			</data>
 		</dict>
 		<key>Modules/VaultSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4ZWO0Q+04kWvTlLIZ7Q2sSEMu+sbRAk1LOSis6YtxJ8=
+			xxk4/FxhLWbUPqUt+Tk+/2/akJWn2gH3UVzCneN3+6U=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Z7Bmdzc+uXI24WTTQLTk4SPbvGser9QhcUK977MhvBo=
+			O0i14Pn/hk8be7su+F/HTiyWGK1qH4OohlZaqJwbmpA=
 			</data>
 		</dict>
 		<key>Podfile</key>
