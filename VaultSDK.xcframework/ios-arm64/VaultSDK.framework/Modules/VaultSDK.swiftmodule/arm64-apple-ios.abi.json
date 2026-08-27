@@ -66743,6 +66743,129 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "DoOnceFlag",
+        "printedName": "DoOnceFlag",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "lock",
+            "printedName": "lock",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NSLock",
+                "printedName": "Foundation.NSLock",
+                "usr": "c:objc(cs)NSLock"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8VaultSDK10DoOnceFlagC4lock33_A4DA335D0C3F3F6D97DBAEBD61F93986LLSo6NSLockCvp",
+            "mangledName": "$s8VaultSDK10DoOnceFlagC4lock33_A4DA335D0C3F3F6D97DBAEBD61F93986LLSo6NSLockCvp",
+            "moduleName": "VaultSDK",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 0,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "fired",
+            "printedName": "fired",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8VaultSDK10DoOnceFlagC5fired33_A4DA335D0C3F3F6D97DBAEBD61F93986LLSbvp",
+            "mangledName": "$s8VaultSDK10DoOnceFlagC5fired33_A4DA335D0C3F3F6D97DBAEBD61F93986LLSbvp",
+            "moduleName": "VaultSDK",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 1,
+            "hasStorage": true
+          },
+          {
+            "kind": "Function",
+            "name": "tryFire",
+            "printedName": "tryFire()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8VaultSDK10DoOnceFlagC7tryFireSbyF",
+            "mangledName": "$s8VaultSDK10DoOnceFlagC7tryFireSbyF",
+            "moduleName": "VaultSDK",
+            "declAttributes": [
+              "Final"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DoOnceFlag",
+                "printedName": "VaultSDK.DoOnceFlag",
+                "usr": "s:8VaultSDK10DoOnceFlagC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8VaultSDK10DoOnceFlagCACycfc",
+            "mangledName": "$s8VaultSDK10DoOnceFlagCACycfc",
+            "moduleName": "VaultSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:8VaultSDK10DoOnceFlagC",
+        "mangledName": "$s8VaultSDK10DoOnceFlagC",
+        "moduleName": "VaultSDK",
+        "declAttributes": [
+          "Final"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -85119,6 +85242,27 @@
       "value": "\"CONNECT\""
     },
     {
+      "filePath": "\/Users\/vagrant\/git\/VaultSDK\/Data\/HTTPDispatcher\/HTTPDispatcher.swift",
+      "kind": "StringLiteral",
+      "offset": 506,
+      "length": 30,
+      "value": "\"yyyy-MM-dd'T'HH:mm:ss.SSS'Z'\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/VaultSDK\/Data\/HTTPDispatcher\/HTTPDispatcher.swift",
+      "kind": "StringLiteral",
+      "offset": 583,
+      "length": 13,
+      "value": "\"en_US_POSIX\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/VaultSDK\/Data\/HTTPDispatcher\/HTTPDispatcher.swift",
+      "kind": "IntegerLiteral",
+      "offset": 652,
+      "length": 1,
+      "value": "0"
+    },
+    {
       "filePath": "\/Users\/vagrant\/git\/VaultSDK\/Presentation\/Shared\/WalletEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 218,
@@ -85957,6 +86101,13 @@
       "offset": 80,
       "length": 15,
       "value": "\"VGSCardNumber\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/VaultSDK\/Data\/DoOnceFlag.swift",
+      "kind": "BooleanLiteral",
+      "offset": 82,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/VaultSDK\/Data\/CodableRequests\/UpdateMessagingTokenRequest.swift",

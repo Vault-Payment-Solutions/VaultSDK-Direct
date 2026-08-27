@@ -18,11 +18,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		0UwrLZ80jLmxi52M97CYwW/cWDc=
+		2F5lwd/r6blyNT6+hZRj4E5dpqI=
 		</data>
 		<key>Modules/VaultSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		NMae3K92Uy9QIabNouawfDsu1KI=
+		EmzogJzXzNNZmdXjwzpBrf5LuWw=
 		</data>
 		<key>Modules/VaultSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/VaultSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		3UrQDQpp1Jd1SoizN+lwxqW6dNw=
+		PupAqwL7k8f+p9ZzNuAzGOkKKNw=
 		</data>
 		<key>Modules/VaultSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		NMae3K92Uy9QIabNouawfDsu1KI=
+		EmzogJzXzNNZmdXjwzpBrf5LuWw=
 		</data>
 		<key>Modules/VaultSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/VaultSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		98T/gT3mDQavwVJAAEI62F4Fi+o=
+		u/2cVX0rUeKEOs3QiLoMvvyGPY4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -104,7 +104,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+7lYs+2jGVWMDwboRk5+2T3sL8LZOh7Cy3ulOfNNjws=
+			Oi0+Vs/Yc+kZch1cmufFKKlvu5NX9rPOvs6WK6F8lFo=
 			</data>
 		</dict>
 		<key>Modules/VaultSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -132,14 +132,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			d8CIf5KHdqHhtvN/SPaKCr4eyG3vTe0gMqToa6reqgk=
+			zpmERo7VUaoVqgENv00e+9GXCVl8/bd5HCYxqgheOX0=
 			</data>
 		</dict>
 		<key>Modules/VaultSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+7lYs+2jGVWMDwboRk5+2T3sL8LZOh7Cy3ulOfNNjws=
+			Oi0+Vs/Yc+kZch1cmufFKKlvu5NX9rPOvs6WK6F8lFo=
 			</data>
 		</dict>
 		<key>Modules/VaultSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -167,7 +167,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xxk4/FxhLWbUPqUt+Tk+/2/akJWn2gH3UVzCneN3+6U=
+			W9uPtkqDc7W+os190ma0OzpG6Fc0Avi+aUcDwe6BJ0Y=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
