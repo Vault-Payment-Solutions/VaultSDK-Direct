@@ -25,8 +25,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "VaultSDK",
-            url: "https://api.github.com/repos/Vault-Payment-Solutions/VaultSDK-Direct/releases/assets/531631300.zip",
-            checksum: "01252f659c5508a20aa19ea0fa89e41bd7b3553e766a741c0397d1dae47b5294"
+            url: "https://api.github.com/repos/Vault-Payment-Solutions/VaultSDK-Direct/releases/assets/564603064.zip",
+            checksum: "934dea1ae87c49e7bd54961e25aa6987b216343a1c5e1d60a5e16a253679e9c5"
         )
     ]
 )
