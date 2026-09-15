@@ -31173,6 +31173,340 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "KeychainStore",
+        "printedName": "KeychainStore",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "set",
+            "printedName": "set(_:account:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8VaultSDK13KeychainStoreP3set_7accounts5Int32V10Foundation4DataV_SStF",
+            "mangledName": "$s8VaultSDK13KeychainStoreP3set_7accounts5Int32V10Foundation4DataV_SStF",
+            "moduleName": "VaultSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : VaultSDK.KeychainStore>",
+            "sugared_genericSig": "<Self where Self : VaultSDK.KeychainStore>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "get",
+            "printedName": "get(account:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8VaultSDK13KeychainStoreP3get7account10Foundation4DataVSgSS_tF",
+            "mangledName": "$s8VaultSDK13KeychainStoreP3get7account10Foundation4DataVSgSS_tF",
+            "moduleName": "VaultSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : VaultSDK.KeychainStore>",
+            "sugared_genericSig": "<Self where Self : VaultSDK.KeychainStore>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "delete",
+            "printedName": "delete(account:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8VaultSDK13KeychainStoreP6delete7accounts5Int32VSS_tF",
+            "mangledName": "$s8VaultSDK13KeychainStoreP6delete7accounts5Int32VSS_tF",
+            "moduleName": "VaultSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : VaultSDK.KeychainStore>",
+            "sugared_genericSig": "<Self where Self : VaultSDK.KeychainStore>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:8VaultSDK13KeychainStoreP",
+        "mangledName": "$s8VaultSDK13KeychainStoreP",
+        "moduleName": "VaultSDK",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SecItemKeychainStore",
+        "printedName": "SecItemKeychainStore",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "service",
+            "printedName": "service",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8VaultSDK20SecItemKeychainStoreV7service33_A5E3A703D1A55FBBB7E2D771C01EFCDFLLSSvp",
+            "mangledName": "$s8VaultSDK20SecItemKeychainStoreV7service33_A5E3A703D1A55FBBB7E2D771C01EFCDFLLSSvp",
+            "moduleName": "VaultSDK",
+            "isInternal": true,
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 0,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "accessible",
+            "printedName": "accessible",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CFString",
+                "printedName": "CoreFoundation.CFString",
+                "usr": "c:@T@CFStringRef"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8VaultSDK20SecItemKeychainStoreV10accessible33_A5E3A703D1A55FBBB7E2D771C01EFCDFLLSo11CFStringRefavp",
+            "mangledName": "$s8VaultSDK20SecItemKeychainStoreV10accessible33_A5E3A703D1A55FBBB7E2D771C01EFCDFLLSo11CFStringRefavp",
+            "moduleName": "VaultSDK",
+            "isInternal": true,
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 1,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(service:accessible:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SecItemKeychainStore",
+                "printedName": "VaultSDK.SecItemKeychainStore",
+                "usr": "s:8VaultSDK20SecItemKeychainStoreV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CFString",
+                "printedName": "CoreFoundation.CFString",
+                "hasDefaultArg": true,
+                "usr": "c:@T@CFStringRef"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8VaultSDK20SecItemKeychainStoreV7service10accessibleACSS_So11CFStringRefatcfc",
+            "mangledName": "$s8VaultSDK20SecItemKeychainStoreV7service10accessibleACSS_So11CFStringRefatcfc",
+            "moduleName": "VaultSDK",
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "set",
+            "printedName": "set(_:account:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8VaultSDK20SecItemKeychainStoreV3set_7accounts5Int32V10Foundation4DataV_SStF",
+            "mangledName": "$s8VaultSDK20SecItemKeychainStoreV3set_7accounts5Int32V10Foundation4DataV_SStF",
+            "moduleName": "VaultSDK",
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "get",
+            "printedName": "get(account:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8VaultSDK20SecItemKeychainStoreV3get7account10Foundation4DataVSgSS_tF",
+            "mangledName": "$s8VaultSDK20SecItemKeychainStoreV3get7account10Foundation4DataVSgSS_tF",
+            "moduleName": "VaultSDK",
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "delete",
+            "printedName": "delete(account:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8VaultSDK20SecItemKeychainStoreV6delete7accounts5Int32VSS_tF",
+            "mangledName": "$s8VaultSDK20SecItemKeychainStoreV6delete7accounts5Int32VSS_tF",
+            "moduleName": "VaultSDK",
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:8VaultSDK20SecItemKeychainStoreV",
+        "mangledName": "$s8VaultSDK20SecItemKeychainStoreV",
+        "moduleName": "VaultSDK",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "KeychainStore",
+            "printedName": "KeychainStore",
+            "usr": "s:8VaultSDK13KeychainStoreP",
+            "mangledName": "$s8VaultSDK13KeychainStoreP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -33514,6 +33848,13 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Security",
+        "printedName": "Security",
+        "declKind": "Import",
+        "moduleName": "VaultSDK"
+      },
+      {
         "kind": "TypeDecl",
         "name": "Persistence",
         "printedName": "Persistence",
@@ -33678,6 +34019,31 @@
           },
           {
             "kind": "Var",
+            "name": "keychain",
+            "printedName": "keychain",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "KeychainStore",
+                "printedName": "any VaultSDK.KeychainStore",
+                "usr": "s:8VaultSDK13KeychainStoreP"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8VaultSDK16PersistenceStoreV8keychain33_CFC63DF86E685093761617925690FC57LLAA08KeychainD0_pvp",
+            "mangledName": "$s8VaultSDK16PersistenceStoreV8keychain33_CFC63DF86E685093761617925690FC57LLAA08KeychainD0_pvp",
+            "moduleName": "VaultSDK",
+            "isInternal": true,
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 1,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
             "name": "accessToken",
             "printedName": "accessToken",
             "children": [
@@ -33732,7 +34098,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(userDefaults:)",
+            "printedName": "init(userDefaults:keychain:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -33746,11 +34112,18 @@
                 "printedName": "Foundation.UserDefaults",
                 "hasDefaultArg": true,
                 "usr": "c:objc(cs)NSUserDefaults"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KeychainStore",
+                "printedName": "any VaultSDK.KeychainStore",
+                "hasDefaultArg": true,
+                "usr": "s:8VaultSDK13KeychainStoreP"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:8VaultSDK16PersistenceStoreV12userDefaultsACSo06NSUserF0C_tcfc",
-            "mangledName": "$s8VaultSDK16PersistenceStoreV12userDefaultsACSo06NSUserF0C_tcfc",
+            "usr": "s:8VaultSDK16PersistenceStoreV12userDefaults8keychainACSo06NSUserF0C_AA08KeychainD0_ptcfc",
+            "mangledName": "$s8VaultSDK16PersistenceStoreV12userDefaults8keychainACSo06NSUserF0C_AA08KeychainD0_ptcfc",
             "moduleName": "VaultSDK",
             "init_kind": "Designated"
           },
@@ -85144,9 +85517,16 @@
       "value": "true"
     },
     {
+      "filePath": "\/Users\/vagrant\/git\/VaultSDK\/Data\/Persistence\/KeychainStore.swift",
+      "kind": "StringLiteral",
+      "offset": 319,
+      "length": 23,
+      "value": "\"com.vault.sdk.session\""
+    },
+    {
       "filePath": "\/Users\/vagrant\/git\/VaultSDK\/Data\/Persistence\/PersistanceManager.swift",
       "kind": "StringLiteral",
-      "offset": 148,
+      "offset": 164,
       "length": 16,
       "value": "\"emlAccessToken\""
     },

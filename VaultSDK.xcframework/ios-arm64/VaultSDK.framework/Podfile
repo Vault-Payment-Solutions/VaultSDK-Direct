@@ -11,7 +11,7 @@ project 'VaultSDK'
 project 'vaultsdk-sample/VaultSDKSample'
 
 def eml_pods
-  pod 'EMLSDK', '~> 3.8.2'
+  pod 'EMLSDK', '~> 3.8.7'
 end
 
 def shared_pods
@@ -42,6 +42,8 @@ end
 target 'VaultSDKTests' do
   project 'VaultSDK'
   shared_pods
+  eml_pods
+  
 end
 
 post_install do |installer|
