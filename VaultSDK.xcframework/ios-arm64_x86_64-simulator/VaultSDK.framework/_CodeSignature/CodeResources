@@ -18,11 +18,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		8WuZXW3oLHQ9xYXBMxON21odPNk=
+		fI8Ar7MPVE5G6RbKkNZQwMeYZFQ=
 		</data>
 		<key>Modules/VaultSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		lz0pNAFkppx0T2N3t2GC8JY06uU=
+		sgZlLTOWmql7IJzI5ngAPXCtMF8=
 		</data>
 		<key>Modules/VaultSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/VaultSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		C0pD7koNwGBzLtlzFawTt/Xma4Y=
+		kg6IxXj5ytTQHTQOqlDc4S/T9z8=
 		</data>
 		<key>Modules/VaultSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/VaultSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		vi9gP59noShm/VqiQFqQer7AYZc=
+		Jocb+rPnuu1dmvplslIgCwFxnPI=
 		</data>
 		<key>Modules/VaultSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		lz0pNAFkppx0T2N3t2GC8JY06uU=
+		sgZlLTOWmql7IJzI5ngAPXCtMF8=
 		</data>
 		<key>Modules/VaultSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/VaultSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Ym2onQmdhJqKNc7GnbnQpHdtzTM=
+		q+3usHW+3RBF5wVWk0OPVi5BGL0=
 		</data>
 		<key>Modules/VaultSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/VaultSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		lnhOSiiawVbVrKNWOWSwBM33eU0=
+		xLBSHJzJJ2DcuuVtR5ajToPvi7s=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -104,7 +104,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NU0wsN3kvF/x9BkoPy+Ln7F1WxRdQfJpojBaC6707/s=
+			MBkkbi9akqoaTamY6e2q3/pUKrvZAxKfhIkN2HAb03Q=
 			</data>
 		</dict>
 		<key>Modules/VaultSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -118,7 +118,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XbdQ2TGCni2GpxlyR1PTUF2vzWVIpaK4LTrPKIM1csA=
+			TpkOa+jRONRSIMCG/IQx+h8Qh3QzmFYgTVI0mh/5+eU=
 			</data>
 		</dict>
 		<key>Modules/VaultSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
@@ -132,14 +132,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cOSwowfScWCfRtuuWPga3/FIcLGvthg8swddbZ3+6z0=
+			bSwGLbukfQQu/e3091QVVX4AQhEIaNBn9SxbSObY6xo=
 			</data>
 		</dict>
 		<key>Modules/VaultSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NU0wsN3kvF/x9BkoPy+Ln7F1WxRdQfJpojBaC6707/s=
+			MBkkbi9akqoaTamY6e2q3/pUKrvZAxKfhIkN2HAb03Q=
 			</data>
 		</dict>
 		<key>Modules/VaultSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -153,7 +153,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			whe3a/qYNrBXr4g4SWifVw1rOeaMq15nDuVkvBKITZw=
+			LCRGR2JZO7WWvCdLj8jtU+kXhRqEvZxgpomJ5RipRJg=
 			</data>
 		</dict>
 		<key>Modules/VaultSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
@@ -167,7 +167,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8nrDZ7XpJwJv9ceTeT5ttoNiYLPwvMQ1Yfk7fy/XhJM=
+			oc8fv5ssktxBzE3vajMxsA4yB9jlk7JAeuVlB0K0imY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

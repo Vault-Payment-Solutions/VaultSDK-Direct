@@ -1614,22 +1614,31 @@
           },
           {
             "kind": "Var",
-            "name": "color",
-            "printedName": "color",
+            "name": "styles",
+            "printedName": "styles",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
-                "usr": "c:objc(cs)UIColor"
+                "name": "Array",
+                "printedName": "[VaultSDK.VGSLabelStyle]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VGSLabelStyle",
+                    "printedName": "VaultSDK.VGSLabelStyle",
+                    "usr": "s:8VaultSDK13VGSLabelStyleV"
+                  }
+                ],
+                "usr": "s:Sa"
               }
             ],
             "declKind": "Var",
-            "usr": "s:8VaultSDK27VGSCardFieldPresenterParamsV5colorSo7UIColorCvp",
-            "mangledName": "$s8VaultSDK27VGSCardFieldPresenterParamsV5colorSo7UIColorCvp",
+            "usr": "s:8VaultSDK27VGSCardFieldPresenterParamsV6stylesSayAA13VGSLabelStyleVGvp",
+            "mangledName": "$s8VaultSDK27VGSCardFieldPresenterParamsV6stylesSayAA13VGSLabelStyleVGvp",
             "moduleName": "VaultSDK",
             "declAttributes": [
-              "HasStorage"
+              "HasStorage",
+              "RawDocComment"
             ],
             "fixedbinaryorder": 4,
             "isLet": true,
@@ -1642,14 +1651,22 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "UIColor",
-                    "printedName": "UIKit.UIColor",
-                    "usr": "c:objc(cs)UIColor"
+                    "name": "Array",
+                    "printedName": "[VaultSDK.VGSLabelStyle]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VGSLabelStyle",
+                        "printedName": "VaultSDK.VGSLabelStyle",
+                        "usr": "s:8VaultSDK13VGSLabelStyleV"
+                      }
+                    ],
+                    "usr": "s:Sa"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8VaultSDK27VGSCardFieldPresenterParamsV5colorSo7UIColorCvg",
-                "mangledName": "$s8VaultSDK27VGSCardFieldPresenterParamsV5colorSo7UIColorCvg",
+                "usr": "s:8VaultSDK27VGSCardFieldPresenterParamsV6stylesSayAA13VGSLabelStyleVGvg",
+                "mangledName": "$s8VaultSDK27VGSCardFieldPresenterParamsV6stylesSayAA13VGSLabelStyleVGvg",
                 "moduleName": "VaultSDK",
                 "implicit": true,
                 "declAttributes": [
@@ -1662,7 +1679,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(card:fieldType:environment:jwt:color:)",
+            "printedName": "init(card:fieldType:environment:jwt:styles:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1696,14 +1713,22 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
-                "usr": "c:objc(cs)UIColor"
+                "name": "Array",
+                "printedName": "[VaultSDK.VGSLabelStyle]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VGSLabelStyle",
+                    "printedName": "VaultSDK.VGSLabelStyle",
+                    "usr": "s:8VaultSDK13VGSLabelStyleV"
+                  }
+                ],
+                "usr": "s:Sa"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:8VaultSDK27VGSCardFieldPresenterParamsV4card9fieldType11environment3jwt5colorAcA8UserCardV_AA08VGSFieldI0OAA0A14SDKEnvironmentOSSSo7UIColorCtcfc",
-            "mangledName": "$s8VaultSDK27VGSCardFieldPresenterParamsV4card9fieldType11environment3jwt5colorAcA8UserCardV_AA08VGSFieldI0OAA0A14SDKEnvironmentOSSSo7UIColorCtcfc",
+            "usr": "s:8VaultSDK27VGSCardFieldPresenterParamsV4card9fieldType11environment3jwt6stylesAcA8UserCardV_AA08VGSFieldI0OAA0A14SDKEnvironmentOSSSayAA13VGSLabelStyleVGtcfc",
+            "mangledName": "$s8VaultSDK27VGSCardFieldPresenterParamsV4card9fieldType11environment3jwt6stylesAcA8UserCardV_AA08VGSFieldI0OAA0A14SDKEnvironmentOSSSayAA13VGSLabelStyleVGtcfc",
             "moduleName": "VaultSDK",
             "implicit": true,
             "init_kind": "Designated"
@@ -1771,13 +1796,13 @@
           },
           {
             "kind": "Var",
-            "name": "cardPropertyView",
-            "printedName": "cardPropertyView",
+            "name": "cardPropertyViews",
+            "printedName": "cardPropertyViews",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "VaultSDK.VGSCardFieldDisplayView?",
+                "name": "Array",
+                "printedName": "[VaultSDK.VGSCardFieldDisplayView]",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -1786,12 +1811,12 @@
                     "usr": "c:@M@VaultSDK@objc(cs)VGSCardFieldDisplayView"
                   }
                 ],
-                "usr": "s:Sq"
+                "usr": "s:Sa"
               }
             ],
             "declKind": "Var",
-            "usr": "s:8VaultSDK21VGSCardFieldPresenterC16cardPropertyView33_29332FE7BCE945FEC5B240D2BEDFE8DELLAA0cd7DisplayH0CSgvp",
-            "mangledName": "$s8VaultSDK21VGSCardFieldPresenterC16cardPropertyView33_29332FE7BCE945FEC5B240D2BEDFE8DELLAA0cd7DisplayH0CSgvp",
+            "usr": "s:8VaultSDK21VGSCardFieldPresenterC17cardPropertyViews33_29332FE7BCE945FEC5B240D2BEDFE8DELLSayAA0cD11DisplayViewCGvp",
+            "mangledName": "$s8VaultSDK21VGSCardFieldPresenterC17cardPropertyViews33_29332FE7BCE945FEC5B240D2BEDFE8DELLSayAA0cD11DisplayViewCGvp",
             "moduleName": "VaultSDK",
             "isInternal": true,
             "declAttributes": [
@@ -1806,7 +1831,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(viewType:vaultID:hostName:environment:textColour:)",
+            "printedName": "init(viewType:vaultID:hostName:environment:styles:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1840,65 +1865,79 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
-                "usr": "c:objc(cs)UIColor"
+                "name": "Array",
+                "printedName": "[VaultSDK.VGSLabelStyle]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VGSLabelStyle",
+                    "printedName": "VaultSDK.VGSLabelStyle",
+                    "usr": "s:8VaultSDK13VGSLabelStyleV"
+                  }
+                ],
+                "usr": "s:Sa"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:8VaultSDK21VGSCardFieldPresenterC8viewType7vaultID8hostName11environment10textColourAcA08VGSFieldG0O_S3SSo7UIColorCtcfc",
-            "mangledName": "$s8VaultSDK21VGSCardFieldPresenterC8viewType7vaultID8hostName11environment10textColourAcA08VGSFieldG0O_S3SSo7UIColorCtcfc",
+            "usr": "s:8VaultSDK21VGSCardFieldPresenterC8viewType7vaultID8hostName11environment6stylesAcA08VGSFieldG0O_S3SSayAA13VGSLabelStyleVGtcfc",
+            "mangledName": "$s8VaultSDK21VGSCardFieldPresenterC8viewType7vaultID8hostName11environment6stylesAcA08VGSFieldG0O_S3SSayAA13VGSLabelStyleVGtcfc",
             "moduleName": "VaultSDK",
             "init_kind": "Designated"
           },
           {
-            "kind": "Function",
-            "name": "view",
-            "printedName": "view(color:font:)",
+            "kind": "Var",
+            "name": "views",
+            "printedName": "views",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "UIView",
-                "printedName": "UIKit.UIView",
-                "usr": "c:objc(cs)UIView"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "UIKit.UIColor?",
+                "name": "Array",
+                "printedName": "[UIKit.UIView]",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "UIColor",
-                    "printedName": "UIKit.UIColor",
-                    "usr": "c:objc(cs)UIColor"
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
                   }
                 ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "UIKit.UIFont?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIFont",
-                    "printedName": "UIKit.UIFont",
-                    "usr": "c:objc(cs)UIFont"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
+                "usr": "s:Sa"
               }
             ],
-            "declKind": "Func",
-            "usr": "s:8VaultSDK21VGSCardFieldPresenterC4view5color4fontSo6UIViewCSo7UIColorCSg_So6UIFontCSgtF",
-            "mangledName": "$s8VaultSDK21VGSCardFieldPresenterC4view5color4fontSo6UIViewCSo7UIColorCSg_So6UIFontCSgtF",
+            "declKind": "Var",
+            "usr": "s:8VaultSDK21VGSCardFieldPresenterC5viewsSaySo6UIViewCGvp",
+            "mangledName": "$s8VaultSDK21VGSCardFieldPresenterC5viewsSaySo6UIViewCGvp",
             "moduleName": "VaultSDK",
             "isOpen": true,
-            "funcSelfKind": "NonMutating"
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[UIKit.UIView]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIView",
+                        "printedName": "UIKit.UIView",
+                        "usr": "c:objc(cs)UIView"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8VaultSDK21VGSCardFieldPresenterC5viewsSaySo6UIViewCGvg",
+                "mangledName": "$s8VaultSDK21VGSCardFieldPresenterC5viewsSaySo6UIViewCGvg",
+                "moduleName": "VaultSDK",
+                "isOpen": true,
+                "accessorKind": "get"
+              }
+            ]
           },
           {
             "kind": "Function",
@@ -12390,38 +12429,83 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "SensitiveFieldController",
-        "printedName": "SensitiveFieldController",
+        "name": "VGSLabelStyle",
+        "printedName": "VGSLabelStyle",
         "children": [
           {
-            "kind": "Function",
-            "name": "view",
-            "printedName": "view(color:font:)",
+            "kind": "Var",
+            "name": "color",
+            "printedName": "color",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "UIView",
-                "printedName": "UIKit.UIView",
-                "usr": "c:objc(cs)UIView"
-              },
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8VaultSDK13VGSLabelStyleV5colorSo7UIColorCvp",
+            "mangledName": "$s8VaultSDK13VGSLabelStyleV5colorSo7UIColorCvp",
+            "moduleName": "VaultSDK",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 0,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
               {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "SwiftUI.Color?",
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Color",
-                    "printedName": "SwiftUI.Color",
-                    "usr": "s:7SwiftUI5ColorV"
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
                   }
                 ],
-                "usr": "s:Sq"
-              },
+                "declKind": "Accessor",
+                "usr": "s:8VaultSDK13VGSLabelStyleV5colorSo7UIColorCvg",
+                "mangledName": "$s8VaultSDK13VGSLabelStyleV5colorSo7UIColorCvg",
+                "moduleName": "VaultSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "font",
+            "printedName": "font",
+            "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "UIKit.UIFont?",
+                "name": "UIFont",
+                "printedName": "UIKit.UIFont",
+                "usr": "c:objc(cs)UIFont"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8VaultSDK13VGSLabelStyleV4fontSo6UIFontCvp",
+            "mangledName": "$s8VaultSDK13VGSLabelStyleV4fontSo6UIFontCvp",
+            "moduleName": "VaultSDK",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 1,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -12430,18 +12514,146 @@
                     "usr": "c:objc(cs)UIFont"
                   }
                 ],
-                "usr": "s:Sq"
+                "declKind": "Accessor",
+                "usr": "s:8VaultSDK13VGSLabelStyleV4fontSo6UIFontCvg",
+                "mangledName": "$s8VaultSDK13VGSLabelStyleV4fontSo6UIFontCvg",
+                "moduleName": "VaultSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(color:font:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VGSLabelStyle",
+                "printedName": "VaultSDK.VGSLabelStyle",
+                "usr": "s:8VaultSDK13VGSLabelStyleV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIFont",
+                "printedName": "UIKit.UIFont",
+                "usr": "c:objc(cs)UIFont"
               }
             ],
-            "declKind": "Func",
-            "usr": "s:8VaultSDK24SensitiveFieldControllerP4view5color4fontSo6UIViewC7SwiftUI5ColorVSg_So6UIFontCSgtF",
-            "mangledName": "$s8VaultSDK24SensitiveFieldControllerP4view5color4fontSo6UIViewC7SwiftUI5ColorVSg_So6UIFontCSgtF",
+            "declKind": "Constructor",
+            "usr": "s:8VaultSDK13VGSLabelStyleV5color4fontACSo7UIColorC_So6UIFontCtcfc",
+            "mangledName": "$s8VaultSDK13VGSLabelStyleV5color4fontACSo7UIColorC_So6UIFontCtcfc",
             "moduleName": "VaultSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : VaultSDK.SensitiveFieldController>",
-            "sugared_genericSig": "<Self where Self : VaultSDK.SensitiveFieldController>",
+            "implicit": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:8VaultSDK13VGSLabelStyleV",
+        "mangledName": "$s8VaultSDK13VGSLabelStyleV",
+        "moduleName": "VaultSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SensitiveFieldController",
+        "printedName": "SensitiveFieldController",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "views",
+            "printedName": "views",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[UIKit.UIView]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8VaultSDK24SensitiveFieldControllerP5viewsSaySo6UIViewCGvp",
+            "mangledName": "$s8VaultSDK24SensitiveFieldControllerP5viewsSaySo6UIViewCGvp",
+            "moduleName": "VaultSDK",
             "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[UIKit.UIView]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIView",
+                        "printedName": "UIKit.UIView",
+                        "usr": "c:objc(cs)UIView"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8VaultSDK24SensitiveFieldControllerP5viewsSaySo6UIViewCGvg",
+                "mangledName": "$s8VaultSDK24SensitiveFieldControllerP5viewsSaySo6UIViewCGvg",
+                "moduleName": "VaultSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : VaultSDK.SensitiveFieldController>",
+                "sugared_genericSig": "<Self where Self : VaultSDK.SensitiveFieldController>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
           },
           {
             "kind": "Function",
@@ -19439,7 +19651,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(VaultSDK.UserCard) async throws -> any VaultSDK.SensitiveFieldController",
+                "printedName": "(VaultSDK.UserCard, [VaultSDK.VGSLabelStyle]) async throws -> any VaultSDK.SensitiveFieldController",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -19449,21 +19661,43 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "UserCard",
-                    "printedName": "VaultSDK.UserCard",
-                    "usr": "s:8VaultSDK8UserCardV"
+                    "name": "Tuple",
+                    "printedName": "(VaultSDK.UserCard, [VaultSDK.VGSLabelStyle])",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserCard",
+                        "printedName": "VaultSDK.UserCard",
+                        "usr": "s:8VaultSDK8UserCardV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[VaultSDK.VGSLabelStyle]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "VGSLabelStyle",
+                            "printedName": "VaultSDK.VGSLabelStyle",
+                            "usr": "s:8VaultSDK13VGSLabelStyleV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ]
                   }
                 ]
               }
             ],
             "declKind": "Var",
-            "usr": "s:8VaultSDK16RevealedCardViewV6getCvvyAA24SensitiveFieldController_pAA04UserD0VYaKcvp",
-            "mangledName": "$s8VaultSDK16RevealedCardViewV6getCvvyAA24SensitiveFieldController_pAA04UserD0VYaKcvp",
+            "usr": "s:8VaultSDK16RevealedCardViewV6getCvvyAA24SensitiveFieldController_pAA04UserD0V_SayAA13VGSLabelStyleVGtYaKcvp",
+            "mangledName": "$s8VaultSDK16RevealedCardViewV6getCvvyAA24SensitiveFieldController_pAA04UserD0V_SayAA13VGSLabelStyleVGtYaKcvp",
             "moduleName": "VaultSDK",
             "declAttributes": [
               "Preconcurrency",
               "Custom",
-              "HasStorage"
+              "HasStorage",
+              "RawDocComment"
             ],
             "fixedbinaryorder": 1,
             "isLet": true,
@@ -19477,7 +19711,7 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(VaultSDK.UserCard) async throws -> any VaultSDK.SensitiveFieldController",
+                    "printedName": "(VaultSDK.UserCard, [VaultSDK.VGSLabelStyle]) async throws -> any VaultSDK.SensitiveFieldController",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -19487,16 +19721,37 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "UserCard",
-                        "printedName": "VaultSDK.UserCard",
-                        "usr": "s:8VaultSDK8UserCardV"
+                        "name": "Tuple",
+                        "printedName": "(VaultSDK.UserCard, [VaultSDK.VGSLabelStyle])",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UserCard",
+                            "printedName": "VaultSDK.UserCard",
+                            "usr": "s:8VaultSDK8UserCardV"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[VaultSDK.VGSLabelStyle]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "VGSLabelStyle",
+                                "printedName": "VaultSDK.VGSLabelStyle",
+                                "usr": "s:8VaultSDK13VGSLabelStyleV"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          }
+                        ]
                       }
                     ]
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8VaultSDK16RevealedCardViewV6getCvvyAA24SensitiveFieldController_pAA04UserD0VYaKcvg",
-                "mangledName": "$s8VaultSDK16RevealedCardViewV6getCvvyAA24SensitiveFieldController_pAA04UserD0VYaKcvg",
+                "usr": "s:8VaultSDK16RevealedCardViewV6getCvvyAA24SensitiveFieldController_pAA04UserD0V_SayAA13VGSLabelStyleVGtYaKcvg",
+                "mangledName": "$s8VaultSDK16RevealedCardViewV6getCvvyAA24SensitiveFieldController_pAA04UserD0V_SayAA13VGSLabelStyleVGtYaKcvg",
                 "moduleName": "VaultSDK",
                 "implicit": true,
                 "declAttributes": [
@@ -19514,7 +19769,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(VaultSDK.UserCard) async throws -> any VaultSDK.SensitiveFieldController",
+                "printedName": "(VaultSDK.UserCard, [VaultSDK.VGSLabelStyle]) async throws -> any VaultSDK.SensitiveFieldController",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -19524,16 +19779,37 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "UserCard",
-                    "printedName": "VaultSDK.UserCard",
-                    "usr": "s:8VaultSDK8UserCardV"
+                    "name": "Tuple",
+                    "printedName": "(VaultSDK.UserCard, [VaultSDK.VGSLabelStyle])",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserCard",
+                        "printedName": "VaultSDK.UserCard",
+                        "usr": "s:8VaultSDK8UserCardV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[VaultSDK.VGSLabelStyle]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "VGSLabelStyle",
+                            "printedName": "VaultSDK.VGSLabelStyle",
+                            "usr": "s:8VaultSDK13VGSLabelStyleV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ]
                   }
                 ]
               }
             ],
             "declKind": "Var",
-            "usr": "s:8VaultSDK16RevealedCardViewV6getPanyAA24SensitiveFieldController_pAA04UserD0VYaKcvp",
-            "mangledName": "$s8VaultSDK16RevealedCardViewV6getPanyAA24SensitiveFieldController_pAA04UserD0VYaKcvp",
+            "usr": "s:8VaultSDK16RevealedCardViewV6getPanyAA24SensitiveFieldController_pAA04UserD0V_SayAA13VGSLabelStyleVGtYaKcvp",
+            "mangledName": "$s8VaultSDK16RevealedCardViewV6getPanyAA24SensitiveFieldController_pAA04UserD0V_SayAA13VGSLabelStyleVGtYaKcvp",
             "moduleName": "VaultSDK",
             "declAttributes": [
               "Preconcurrency",
@@ -19552,7 +19828,7 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(VaultSDK.UserCard) async throws -> any VaultSDK.SensitiveFieldController",
+                    "printedName": "(VaultSDK.UserCard, [VaultSDK.VGSLabelStyle]) async throws -> any VaultSDK.SensitiveFieldController",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -19562,16 +19838,37 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "UserCard",
-                        "printedName": "VaultSDK.UserCard",
-                        "usr": "s:8VaultSDK8UserCardV"
+                        "name": "Tuple",
+                        "printedName": "(VaultSDK.UserCard, [VaultSDK.VGSLabelStyle])",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UserCard",
+                            "printedName": "VaultSDK.UserCard",
+                            "usr": "s:8VaultSDK8UserCardV"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[VaultSDK.VGSLabelStyle]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "VGSLabelStyle",
+                                "printedName": "VaultSDK.VGSLabelStyle",
+                                "usr": "s:8VaultSDK13VGSLabelStyleV"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          }
+                        ]
                       }
                     ]
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8VaultSDK16RevealedCardViewV6getPanyAA24SensitiveFieldController_pAA04UserD0VYaKcvg",
-                "mangledName": "$s8VaultSDK16RevealedCardViewV6getPanyAA24SensitiveFieldController_pAA04UserD0VYaKcvg",
+                "usr": "s:8VaultSDK16RevealedCardViewV6getPanyAA24SensitiveFieldController_pAA04UserD0V_SayAA13VGSLabelStyleVGtYaKcvg",
+                "mangledName": "$s8VaultSDK16RevealedCardViewV6getPanyAA24SensitiveFieldController_pAA04UserD0V_SayAA13VGSLabelStyleVGtYaKcvg",
                 "moduleName": "VaultSDK",
                 "implicit": true,
                 "declAttributes": [
@@ -21561,7 +21858,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(VaultSDK.UserCard) async throws -> any VaultSDK.SensitiveFieldController",
+                "printedName": "(VaultSDK.UserCard, [VaultSDK.VGSLabelStyle]) async throws -> any VaultSDK.SensitiveFieldController",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -21571,16 +21868,37 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "UserCard",
-                    "printedName": "VaultSDK.UserCard",
-                    "usr": "s:8VaultSDK8UserCardV"
+                    "name": "Tuple",
+                    "printedName": "(VaultSDK.UserCard, [VaultSDK.VGSLabelStyle])",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserCard",
+                        "printedName": "VaultSDK.UserCard",
+                        "usr": "s:8VaultSDK8UserCardV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[VaultSDK.VGSLabelStyle]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "VGSLabelStyle",
+                            "printedName": "VaultSDK.VGSLabelStyle",
+                            "usr": "s:8VaultSDK13VGSLabelStyleV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ]
                   }
                 ]
               },
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(VaultSDK.UserCard) async throws -> any VaultSDK.SensitiveFieldController",
+                "printedName": "(VaultSDK.UserCard, [VaultSDK.VGSLabelStyle]) async throws -> any VaultSDK.SensitiveFieldController",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -21590,9 +21908,30 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "UserCard",
-                    "printedName": "VaultSDK.UserCard",
-                    "usr": "s:8VaultSDK8UserCardV"
+                    "name": "Tuple",
+                    "printedName": "(VaultSDK.UserCard, [VaultSDK.VGSLabelStyle])",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserCard",
+                        "printedName": "VaultSDK.UserCard",
+                        "usr": "s:8VaultSDK8UserCardV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[VaultSDK.VGSLabelStyle]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "VGSLabelStyle",
+                            "printedName": "VaultSDK.VGSLabelStyle",
+                            "usr": "s:8VaultSDK13VGSLabelStyleV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ]
                   }
                 ]
               },
@@ -21718,8 +22057,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:8VaultSDK16RevealedCardViewV4card6getCvv0G3Pan10onComplete0F13DisplayEntity02isD7Flipped03rowhE00piE00fhE00fiE013cvvController03panR0AcA04UserD0V_AA014SensitiveFieldR0_pAQYaKcAaR_pAQYaKcyycAA0adlM0CSbSo6UIViewCSgA3waR_pSgAXtcfc",
-            "mangledName": "$s8VaultSDK16RevealedCardViewV4card6getCvv0G3Pan10onComplete0F13DisplayEntity02isD7Flipped03rowhE00piE00fhE00fiE013cvvController03panR0AcA04UserD0V_AA014SensitiveFieldR0_pAQYaKcAaR_pAQYaKcyycAA0adlM0CSbSo6UIViewCSgA3waR_pSgAXtcfc",
+            "usr": "s:8VaultSDK16RevealedCardViewV4card6getCvv0G3Pan10onComplete0F13DisplayEntity02isD7Flipped03rowhE00piE00fhE00fiE013cvvController03panR0AcA04UserD0V_AA014SensitiveFieldR0_pAQ_SayAA13VGSLabelStyleVGtYaKcAaR_pAQ_AUtYaKcyycAA0adlM0CSbSo6UIViewCSgA3zaR_pSgA_tcfc",
+            "mangledName": "$s8VaultSDK16RevealedCardViewV4card6getCvv0G3Pan10onComplete0F13DisplayEntity02isD7Flipped03rowhE00piE00fhE00fiE013cvvController03panR0AcA04UserD0V_AA014SensitiveFieldR0_pAQ_SayAA13VGSLabelStyleVGtYaKcAaR_pAQ_AUtYaKcyycAA0adlM0CSbSo6UIViewCSgA3zaR_pSgA_tcfc",
             "moduleName": "VaultSDK",
             "implicit": true,
             "declAttributes": [
@@ -36466,50 +36805,57 @@
             ]
           },
           {
-            "kind": "Function",
-            "name": "view",
-            "printedName": "view(color:font:)",
+            "kind": "Var",
+            "name": "views",
+            "printedName": "views",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "UIView",
-                "printedName": "UIKit.UIView",
-                "usr": "c:objc(cs)UIView"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "SwiftUI.Color?",
+                "name": "Array",
+                "printedName": "[UIKit.UIView]",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Color",
-                    "printedName": "SwiftUI.Color",
-                    "usr": "s:7SwiftUI5ColorV"
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
                   }
                 ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "UIKit.UIFont?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIFont",
-                    "printedName": "UIKit.UIFont",
-                    "usr": "c:objc(cs)UIFont"
-                  }
-                ],
-                "usr": "s:Sq"
+                "usr": "s:Sa"
               }
             ],
-            "declKind": "Func",
-            "usr": "s:8VaultSDK27VgsSensitiveFieldControllerV4view5color4fontSo6UIViewC7SwiftUI5ColorVSg_So6UIFontCSgtF",
-            "mangledName": "$s8VaultSDK27VgsSensitiveFieldControllerV4view5color4fontSo6UIViewC7SwiftUI5ColorVSg_So6UIFontCSgtF",
+            "declKind": "Var",
+            "usr": "s:8VaultSDK27VgsSensitiveFieldControllerV5viewsSaySo6UIViewCGvp",
+            "mangledName": "$s8VaultSDK27VgsSensitiveFieldControllerV5viewsSaySo6UIViewCGvp",
             "moduleName": "VaultSDK",
-            "funcSelfKind": "NonMutating"
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[UIKit.UIView]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIView",
+                        "printedName": "UIKit.UIView",
+                        "usr": "c:objc(cs)UIView"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8VaultSDK27VgsSensitiveFieldControllerV5viewsSaySo6UIViewCGvg",
+                "mangledName": "$s8VaultSDK27VgsSensitiveFieldControllerV5viewsSaySo6UIViewCGvg",
+                "moduleName": "VaultSDK",
+                "accessorKind": "get"
+              }
+            ]
           },
           {
             "kind": "Function",
@@ -37018,7 +37364,7 @@
           {
             "kind": "Function",
             "name": "getCvv",
-            "printedName": "getCvv(card:)",
+            "printedName": "getCvv(card:styles:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -37039,11 +37385,25 @@
                 "name": "UserCard",
                 "printedName": "VaultSDK.UserCard",
                 "usr": "s:8VaultSDK8UserCardV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[VaultSDK.VGSLabelStyle]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VGSLabelStyle",
+                    "printedName": "VaultSDK.VGSLabelStyle",
+                    "usr": "s:8VaultSDK13VGSLabelStyleV"
+                  }
+                ],
+                "usr": "s:Sa"
               }
             ],
             "declKind": "Func",
-            "usr": "s:8VaultSDK24CardNotPresentRepositoryV6getCvv4cardAA24SensitiveFieldController_pSgAA04UserC0V_tYaKF",
-            "mangledName": "$s8VaultSDK24CardNotPresentRepositoryV6getCvv4cardAA24SensitiveFieldController_pSgAA04UserC0V_tYaKF",
+            "usr": "s:8VaultSDK24CardNotPresentRepositoryV6getCvv4card6stylesAA24SensitiveFieldController_pSgAA04UserC0V_SayAA13VGSLabelStyleVGtYaKF",
+            "mangledName": "$s8VaultSDK24CardNotPresentRepositoryV6getCvv4card6stylesAA24SensitiveFieldController_pSgAA04UserC0V_SayAA13VGSLabelStyleVGtYaKF",
             "moduleName": "VaultSDK",
             "isFromExtension": true,
             "throwing": true,
@@ -37052,7 +37412,7 @@
           {
             "kind": "Function",
             "name": "getPan",
-            "printedName": "getPan(card:textColor:)",
+            "printedName": "getPan(card:styles:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -37076,14 +37436,22 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
-                "usr": "c:objc(cs)UIColor"
+                "name": "Array",
+                "printedName": "[VaultSDK.VGSLabelStyle]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VGSLabelStyle",
+                    "printedName": "VaultSDK.VGSLabelStyle",
+                    "usr": "s:8VaultSDK13VGSLabelStyleV"
+                  }
+                ],
+                "usr": "s:Sa"
               }
             ],
             "declKind": "Func",
-            "usr": "s:8VaultSDK24CardNotPresentRepositoryV6getPan4card9textColorAA24SensitiveFieldController_pSgAA04UserC0V_So7UIColorCtYaKF",
-            "mangledName": "$s8VaultSDK24CardNotPresentRepositoryV6getPan4card9textColorAA24SensitiveFieldController_pSgAA04UserC0V_So7UIColorCtYaKF",
+            "usr": "s:8VaultSDK24CardNotPresentRepositoryV6getPan4card6stylesAA24SensitiveFieldController_pSgAA04UserC0V_SayAA13VGSLabelStyleVGtYaKF",
+            "mangledName": "$s8VaultSDK24CardNotPresentRepositoryV6getPan4card6stylesAA24SensitiveFieldController_pSgAA04UserC0V_SayAA13VGSLabelStyleVGtYaKF",
             "moduleName": "VaultSDK",
             "isFromExtension": true,
             "throwing": true,
@@ -67040,6 +67408,73 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Function",
+            "name": "apiPath",
+            "printedName": "apiPath(cardId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8VaultSDK12VGSFieldTypeO7apiPath6cardIdSSSi_tF",
+            "mangledName": "$s8VaultSDK12VGSFieldTypeO7apiPath6cardIdSSSi_tF",
+            "moduleName": "VaultSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "displayName",
+            "printedName": "displayName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8VaultSDK12VGSFieldTypeO11displayNameSSvp",
+            "mangledName": "$s8VaultSDK12VGSFieldTypeO11displayNameSSvp",
+            "moduleName": "VaultSDK",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8VaultSDK12VGSFieldTypeO11displayNameSSvg",
+                "mangledName": "$s8VaultSDK12VGSFieldTypeO11displayNameSSvg",
+                "moduleName": "VaultSDK",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Enum",
@@ -70960,8 +71395,8 @@
           },
           {
             "kind": "Var",
-            "name": "cardToken",
-            "printedName": "cardToken",
+            "name": "cardPan",
+            "printedName": "cardPan",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -71011,10 +71446,68 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:8VaultSDK0A8ApiPathsO9cardTokenyACSi_tcACmF",
-            "mangledName": "$s8VaultSDK0A8ApiPathsO9cardTokenyACSi_tcACmF",
+            "usr": "s:8VaultSDK0A8ApiPathsO7cardPanyACSi_tcACmF",
+            "mangledName": "$s8VaultSDK0A8ApiPathsO7cardPanyACSi_tcACmF",
             "moduleName": "VaultSDK",
             "fixedbinaryorder": 12
+          },
+          {
+            "kind": "Var",
+            "name": "cardCvv",
+            "printedName": "cardCvv",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VaultSDK.VaultApiPaths.Type) -> (Swift.Int) -> VaultSDK.VaultApiPaths",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int) -> VaultSDK.VaultApiPaths",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VaultApiPaths",
+                        "printedName": "VaultSDK.VaultApiPaths",
+                        "usr": "s:8VaultSDK0A8ApiPathsO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(cardId: Swift.Int)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "VaultSDK.VaultApiPaths.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VaultApiPaths",
+                        "printedName": "VaultSDK.VaultApiPaths",
+                        "usr": "s:8VaultSDK0A8ApiPathsO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8VaultSDK0A8ApiPathsO7cardCvvyACSi_tcACmF",
+            "mangledName": "$s8VaultSDK0A8ApiPathsO7cardCvvyACSi_tcACmF",
+            "moduleName": "VaultSDK",
+            "fixedbinaryorder": 13
           },
           {
             "kind": "Var",
@@ -71072,7 +71565,7 @@
             "usr": "s:8VaultSDK0A8ApiPathsO6setPinyACSi_tcACmF",
             "mangledName": "$s8VaultSDK0A8ApiPathsO6setPinyACSi_tcACmF",
             "moduleName": "VaultSDK",
-            "fixedbinaryorder": 13
+            "fixedbinaryorder": 14
           },
           {
             "kind": "Var",
@@ -72340,7 +72833,8 @@
               "Final",
               "HasStorage",
               "Preconcurrency",
-              "Custom"
+              "Custom",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -85407,21 +85901,21 @@
     {
       "filePath": "\/Users\/vagrant\/git\/VaultSDK\/Presentation\/CardNotPresent\/RevealedCardView.swift",
       "kind": "FloatLiteral",
-      "offset": 375,
+      "offset": 503,
       "length": 4,
       "value": "18.0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/VaultSDK\/Presentation\/CardNotPresent\/RevealedCardView.swift",
       "kind": "FloatLiteral",
-      "offset": 463,
+      "offset": 591,
       "length": 4,
       "value": "24.0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/VaultSDK\/Presentation\/CardNotPresent\/RevealedCardView.swift",
       "kind": "BooleanLiteral",
-      "offset": 522,
+      "offset": 650,
       "length": 5,
       "value": "false"
     },
@@ -85436,34 +85930,34 @@
       "filePath": "\/Users\/vagrant\/git\/VaultSDK\/Data\/HTTPDispatcher\/Environments.swift",
       "kind": "StringLiteral",
       "offset": 251,
-      "length": 46,
-      "value": "\"vault-esp-staging-au-kvwr4chkta-ts.a.run.app\""
+      "length": 27,
+      "value": "\"api-beta.vault-portal.com\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/VaultSDK\/Data\/HTTPDispatcher\/Environments.swift",
       "kind": "StringLiteral",
-      "offset": 327,
-      "length": 27,
-      "value": "\"services.vault-portal.com\""
+      "offset": 308,
+      "length": 22,
+      "value": "\"api.vault-portal.com\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/VaultSDK\/Data\/HTTPDispatcher\/Environments.swift",
       "kind": "IntegerLiteral",
-      "offset": 481,
+      "offset": 457,
       "length": 4,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/VaultSDK\/Data\/HTTPDispatcher\/Environments.swift",
       "kind": "IntegerLiteral",
-      "offset": 495,
+      "offset": 471,
       "length": 7,
       "value": "2"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/VaultSDK\/Data\/HTTPDispatcher\/Environments.swift",
       "kind": "IntegerLiteral",
-      "offset": 512,
+      "offset": 488,
       "length": 4,
       "value": "3"
     },
@@ -86611,105 +87105,105 @@
     {
       "filePath": "\/Users\/vagrant\/git\/VaultSDK\/Presentation\/CardNotPresent\/VGS\/VGSCardFieldDisplayView.swift",
       "kind": "StringLiteral",
-      "offset": 251,
-      "length": 10,
-      "value": "\"cvvToken\""
+      "offset": 309,
+      "length": 5,
+      "value": "\"cvv\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/VaultSDK\/Presentation\/CardNotPresent\/VGS\/VGSCardFieldDisplayView.swift",
       "kind": "StringLiteral",
-      "offset": 295,
-      "length": 7,
-      "value": "\"token\""
+      "offset": 348,
+      "length": 5,
+      "value": "\"pan\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/VaultSDK\/Presentation\/CardNotPresent\/VGS\/VGSCardFieldDisplayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1014,
+      "offset": 1065,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/VaultSDK\/Presentation\/CardNotPresent\/VGS\/VGSCardFieldDisplayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1108,
+      "offset": 1159,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/VaultSDK\/Presentation\/CardNotPresent\/VGS\/VGSCardFieldDisplayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1117,
+      "offset": 1168,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/VaultSDK\/Presentation\/CardNotPresent\/VGS\/VGSCardFieldDisplayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1128,
+      "offset": 1179,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/VaultSDK\/Presentation\/CardNotPresent\/VGS\/VGSCardFieldDisplayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1138,
+      "offset": 1189,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/VaultSDK\/Presentation\/CardNotPresent\/VGS\/VGSCardFieldDisplayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1226,
+      "offset": 1277,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/VaultSDK\/Presentation\/CardNotPresent\/VGS\/VGSCardFieldDisplayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1493,
+      "offset": 1544,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/VaultSDK\/Presentation\/CardNotPresent\/VGS\/VGSCardFieldDisplayView.swift",
       "kind": "StringLiteral",
-      "offset": 1647,
+      "offset": 1698,
       "length": 34,
       "value": "\"(\\d{4})(\\d{4})(\\d{4})(\\d{4})\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/VaultSDK\/Presentation\/CardNotPresent\/VGS\/VGSCardFieldDisplayView.swift",
       "kind": "Array",
-      "offset": 1692,
+      "offset": 1743,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/VaultSDK\/Presentation\/CardNotPresent\/VGS\/VGSCardFieldDisplayView.swift",
       "kind": "StringLiteral",
-      "offset": 1810,
+      "offset": 1861,
       "length": 13,
       "value": "\"$1 $2 $3 $4\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/VaultSDK\/Presentation\/CardNotPresent\/VGS\/VGSCardFieldDisplayView.swift",
       "kind": "StringLiteral",
-      "offset": 1872,
+      "offset": 1923,
       "length": 32,
       "value": "\"invalid regex, error: \""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/VaultSDK\/Presentation\/CardNotPresent\/VGS\/VGSCardFieldDisplayView.swift",
       "kind": "StringLiteral",
-      "offset": 1903,
+      "offset": 1954,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/VaultSDK\/Presentation\/CardNotPresent\/VGS\/VGSCardFieldDisplayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2196,
+      "offset": 2247,
       "length": 1,
       "value": "0"
     },
